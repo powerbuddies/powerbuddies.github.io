@@ -3,3 +3,42 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+    @apply max-w-6xl mx-auto px-4;
+
+    @screen sm {
+        @apply px-6;
+    }
+
+    @screen lg {
+        @apply px-8;
+    }
+}
+
+.heading {
+    @apply text-3xl leading-10 font-extrabold;
+
+    @screen sm {
+        @apply leading-none;
+    }
+
+    @screen md {
+        @apply text-6xl;
+    }
+
+    @screen lg {
+        @apply text-5xl;
+    }
+}
+
+.circular-icon {
+    @apply p-3 inline-block w-12 h-12 border-2 border-blue-100 rounded-full transition duration-200 ease-in-out;
+}
+    .circular-icon:hover {
+        @apply bg-blue-100 text-brand;    
+    }

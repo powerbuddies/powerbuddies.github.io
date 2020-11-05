@@ -1,11 +1,24 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   purge: [`_site/**/*.html`],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+      },
+      // borderWidth: {
+      //   ...defaultTheme.borderWidth,
+      //   '1': '1px',
+      // },
       colors: {
         brand: '#0D7CBF',
+        gray: {
+          'light': '#ECF1F4',
+        },
+        dark: '#034E76',
         red: {
-          '50':  '#fcf8f5',
+          '50': '#fcf8f5',
           '100': '#fceeea',
           '200': '#fad6d3',
           '300': '#f9b4ab',
@@ -15,9 +28,9 @@ module.exports = {
           '700': '#d5292a',
           '800': '#ab2229',
           '900': '#891c23',
-        },        
+        },
         blue: {
-          '50':  '#f4fafc',
+          '50': '#f4fafc',
           '100': '#e0f8fb',
           '200': '#b6ecf8',
           '300': '#85dbf6',
@@ -29,7 +42,7 @@ module.exports = {
           '900': '#12366c',
         },
         purple: {
-          '50':  '#f5f6fb',
+          '50': '#f5f6fb',
           '100': '#edeafb',
           '200': '#ddcef9',
           '300': '#ccaff8',
@@ -41,7 +54,7 @@ module.exports = {
           '900': '#422091',
         },
         pink: {
-          '50':  '#fcf9f9',
+          '50': '#fcf9f9',
           '100': '#fceef5',
           '200': '#faceec',
           '300': '#f9a5df',
@@ -53,7 +66,7 @@ module.exports = {
           '900': '#81163c',
         },
         orange: {
-          '50':  '#fbf7f0',
+          '50': '#fbf7f0',
           '100': '#fbefdf',
           '200': '#f9ddb9',
           '300': '#f7c17f',
@@ -65,7 +78,7 @@ module.exports = {
           '900': '#81241b',
         },
         yellow: {
-          '50':  '#faf9f1',
+          '50': '#faf9f1',
           '100': '#faf5d6',
           '200': '#f5ec9c',
           '300': '#eeda56',
@@ -77,7 +90,7 @@ module.exports = {
           '900': '#523510',
         },
         green: {
-          '50':  '#f7faf7',
+          '50': '#f7faf7',
           '100': '#f0f9eb',
           '200': '#ddf2c8',
           '300': '#bee699',
@@ -89,7 +102,7 @@ module.exports = {
           '900': '#1e451c',
         },
         teal: {
-          '50':  '#f0f9fa',
+          '50': '#f0f9fa',
           '100': '#d9f7f7',
           '200': '#adefee',
           '300': '#74e2e5',
@@ -100,7 +113,7 @@ module.exports = {
           '800': '#145865',
           '900': '#124750',
         },
-      }      
+      }
     },
   },
   variants: {},
