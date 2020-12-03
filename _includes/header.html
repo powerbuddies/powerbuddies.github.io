@@ -5,17 +5,15 @@
         </div>
     </div>
     <div class="text-center p-6">
-        <h1 class="m-0 font-extrabold text-xl tracking-widest">Weighted Therapeutic Animals</h1>
+        <h1 class="m-0 font-extrabold text-xl tracking-widest">
+            {{ site.t[page.lang].tagline }}
+        </h1>
     </div>
     <nav class="h-16 bg-dark text-white flex flex-wrap justify-center items-center space-x-4 lg:space-x-10 uppercase font-bold">
-        <a class="px-2 md:px-8 py-5 hover:bg-brand" href="#about">
-            About
+        {% for item in site.t[page.lang].menu %}
+        <a class="px-2 md:px-8 py-5 hover:bg-brand" href="#{{ item.slug }}">
+            {{ item.title }}
         </a>
-        <a class="px-2 md:px-8 py-5 hover:bg-brand" href="#shop">
-            Shop
-        </a>
-        <a class="px-2 md:px-8 py-5 hover:bg-brand" href="#contact">
-            Contact
-        </a>
+        {% endfor %}
     </nav>
 </header>

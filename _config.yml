@@ -13,3 +13,43 @@ exclude:
   - src
   - tailwind.config.js
   - netlify.toml
+
+languages: ['en', 'fr']
+
+t: 
+  en:
+    tagline: Weighted Therapeutic Animals
+    menu: 
+      - title: About
+        slug: about
+      - title: Shop
+        slug: shop
+      - title: Contact
+        slug: contact
+    hero-line-1: Comforting plush companions for a better
+    hero-line-2: daily calm
+    hero-lead: PowerBuddies products are made locally in Montreal, Canada from start to finish using recycled materials.
+    Shop Now: Shop Now
+    about: The Power Buddies brand was conceived by an industry professional with over 20 years of expertise in Canadian toy therapy products. Power Buddies are crafted locally from start to finish. Their high-quality, soft weighted body design helps to supply a calming effect on their human pals when worn or embraced, relieving stress and fostering fun.
+    copyright: © 2020 PowerBuddies. Tous droits réservés.
+    privacy: Politique de confidentialité
+    terms: Conditions d'utilisation
+    soon: Coming soon.
+  fr: 
+    tagline: Animaux lestés thérapeutiques
+    menu: 
+      - title: À propos de nous
+        slug: about
+      - title: Boutique
+        slug: shop
+      - title: Contactez-nous
+        slug: contact
+    hero-line-1: Des compagnons en peluche réconfortants pour un meilleur calme au quotidien
+    hero-line-2: calme au quotidien
+    hero-lead: Les produits PowerBuddies sont fabriqués localement à Montréal, au Canada, du début à la fin, à partir de matériaux recyclés.
+    Shop Now: Magasinez
+    about: La marque Power Buddies a été conçue par un professionnel de l'industrie ayant plus de 20 ans d'expertise dans les produits de ludothérapie canadiens. Les Power Buddies sont fabriqués localement du début à la fin. Leur conception lestée douce et de haute qualité contribue à apaiser leurs compagnons humains lorsque ceux-ci les portent ou les serrent contre eux, en réduisant le stress et en favorisant le jeu.
+    copyright: © 2020 PowerBuddies. Tous droits réservés.
+    privacy: Privacy Policy
+    terms: Terms of Use
+    soon: À bientôt.
