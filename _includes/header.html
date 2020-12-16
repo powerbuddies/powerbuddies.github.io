@@ -1,3 +1,4 @@
+{% include promo-banner.html %}
 <header>
     <div class="pt-10 text-brand flex items-center justify-center">
         <div class="w-64">
@@ -15,5 +16,15 @@
             {{ item.title }}
         </a>
         {% endfor %}
+        
+        {% if page.lang == "fr" %}
+        <a href="{{ site.baseurl_root }}/" class="px-2 md:px-8 py-5 hover:bg-brand">
+            English
+        </a>
+        {% else %}
+        <a href="{{ site.baseurl_root }}/fr" class="px-2 md:px-8 py-5 hover:bg-brand">
+            Français
+        </a>
+        {% endif %}
     </nav>
 </header>
